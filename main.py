@@ -49,7 +49,11 @@ def triangle():
     turtle.forward(100)
     turtle.right(120)
 
-selection = input("1. Star\n2. Square\n3. Hexagon\n4. Triangle\nSelect a number: ")
+def circle():
+  # Circle
+  turtle.circle(60)
+
+selection = input("1. Star\n2. Square\n3. Hexagon\n4. Triangle\n5. Circle\nSelect a number: ")
 if selection == "1":
   print("Excellent choice! Go to the result tab to see your creation.")
   star()
@@ -62,3 +66,6 @@ elif selection == "3":
 elif selection == "4":
   print("Excellent choice! Go to the result tab to see your creation.")
   triangle()
+elif selection == "5":
+  print("Excellent choice! Go to the result tab to see your creation.")
+  circle()
