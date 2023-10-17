@@ -59,8 +59,14 @@ def pentagon():
     turtle.forward(100)
     turtle.right(72)
 
+def octagon():
+  # Octagon
+  for i in range(0,8):
+    turtle.forward(80)
+    turtle.right(45)
+
 selection = input(
-  "1. Star\n2. Square\n3. Hexagon\n4. Triangle\n5. Circle\n6. Pentagon\nSelect a number: ")
+  "1. Star\n2. Square\n3. Hexagon\n4. Triangle\n5. Circle\n6. Pentagon\n7. Octagon\nSelect a number: ")
 if selection == "1":
   print("Excellent choice! Go to the result tab to see your creation.")
   star()
@@ -79,3 +85,6 @@ elif selection == "5":
 elif selection == "6":
   print("Excellent choice! Go to the result tab to see your creation.")
   pentagon()
+elif selection == "7":
+  print("Excellent choice! Go to the result tab to see your creation.")
+  octagon()
