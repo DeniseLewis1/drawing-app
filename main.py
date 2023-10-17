@@ -53,7 +53,14 @@ def circle():
   # Circle
   turtle.circle(60)
 
-selection = input("1. Star\n2. Square\n3. Hexagon\n4. Triangle\n5. Circle\nSelect a number: ")
+def pentagon():
+  # Pentagon
+  for i in range(0,5):
+    turtle.forward(100)
+    turtle.right(72)
+
+selection = input(
+  "1. Star\n2. Square\n3. Hexagon\n4. Triangle\n5. Circle\n6. Pentagon\nSelect a number: ")
 if selection == "1":
   print("Excellent choice! Go to the result tab to see your creation.")
   star()
@@ -69,3 +76,6 @@ elif selection == "4":
 elif selection == "5":
   print("Excellent choice! Go to the result tab to see your creation.")
   circle()
+elif selection == "6":
+  print("Excellent choice! Go to the result tab to see your creation.")
+  pentagon()
