@@ -83,8 +83,14 @@ def diamond():
   turtle.right(60)
   turtle.forward(100)
 
+def decagon():
+  # Decagon
+  for i in range(0,10):
+    turtle.forward(60)
+    turtle.right(36)
+
 selection = input(
-  "1. Star\n2. Square\n3. Hexagon\n4. Triangle\n5. Circle\n6. Pentagon\n7. Octagon\n8. Rectangle\n9. Diamond\nSelect a number: ")
+  "1. Star\n2. Square\n3. Hexagon\n4. Triangle\n5. Circle\n6. Pentagon\n7. Octagon\n8. Rectangle\n9. Diamond\n10. Decagon\nSelect a number: ")
 if selection == "1":
   print("Excellent choice! Go to the result tab to see your creation.")
   star()
@@ -112,3 +118,6 @@ elif selection == "8":
 elif selection == "9":
   print("Excellent choice! Go to the result tab to see your creation.")
   diamond()
+elif selection == "10":
+  print("Excellent choice! Go to the result tab to see your creation.")
+  decagon()
