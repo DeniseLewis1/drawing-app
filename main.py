@@ -89,8 +89,14 @@ def decagon():
     turtle.forward(60)
     turtle.right(36)
 
+def oval():
+  # Oval
+  for i in range(0,2):
+    turtle.circle(-70,90)
+    turtle.circle(-70//2,90)
+
 selection = input(
-  "1. Star\n2. Square\n3. Hexagon\n4. Triangle\n5. Circle\n6. Pentagon\n7. Octagon\n8. Rectangle\n9. Diamond\n10. Decagon\nSelect a number: ")
+  "1. Star\n2. Square\n3. Hexagon\n4. Triangle\n5. Circle\n6. Pentagon\n7. Octagon\n8. Rectangle\n9. Diamond\n10. Decagon\n11. Oval\nSelect a number: ")
 if selection == "1":
   print("Excellent choice! Go to the result tab to see your creation.")
   star()
@@ -121,3 +127,6 @@ elif selection == "9":
 elif selection == "10":
   print("Excellent choice! Go to the result tab to see your creation.")
   decagon()
+elif selection == "11":
+  print("Excellent choice! Go to the result tab to see your creation.")
+  oval()
