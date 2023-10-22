@@ -25,6 +25,9 @@ turtle.left(90)
 turtle.forward(150)
 turtle.pendown()
 
+turtle.colormode(255)
+turtle.color(random.randint(0, 255), random.randint(0, 255), random.randint(0, 255))
+
 def star():
   # Star
   for i in range(0,5):
