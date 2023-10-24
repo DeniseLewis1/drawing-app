@@ -98,8 +98,14 @@ def oval():
     turtle.circle(-70,90)
     turtle.circle(-70//2,90)
 
+def heptagon():
+  # Heptagon
+  for i in range(0,7):
+    turtle.forward(80)
+    turtle.right(51.4)
+
 selection = input(
-  "1. Star\n2. Square\n3. Hexagon\n4. Triangle\n5. Circle\n6. Pentagon\n7. Octagon\n8. Rectangle\n9. Diamond\n10. Decagon\n11. Oval\nSelect a number: ")
+  "1. Star\n2. Square\n3. Hexagon\n4. Triangle\n5. Circle\n6. Pentagon\n7. Octagon\n8. Rectangle\n9. Diamond\n10. Decagon\n11. Oval\n12. Heptagon\nSelect a number: ")
 if selection == "1":
   print("Excellent choice! Go to the result tab to see your creation.")
   star()
@@ -133,3 +139,6 @@ elif selection == "10":
 elif selection == "11":
   print("Excellent choice! Go to the result tab to see your creation.")
   oval()
+elif selection == "12":
+  print("Excellent choice! Go to the result tab to see your creation.")
+  heptagon()
